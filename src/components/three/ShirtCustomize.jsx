@@ -7,7 +7,7 @@ import {CanvasBase} from "./CanvasBase";
 const ShirtCustomize = () => {
   return (
     <>
-      <Box m="90px auto" width="100%" height="100vh">
+      <Box m="0" width="100%" height="90vh">
         <CanvasBase/>
         <Overlay/>
       </Box>
