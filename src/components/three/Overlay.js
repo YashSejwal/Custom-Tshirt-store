@@ -13,7 +13,7 @@ export function Overlay() {
     exit: { x: -100, opacity: 0, transition: { ...transition, delay: 0 } }
   }
   return (
-    <div style={{ position: 'absolute', width: '100%', height: '100%' ,bottom:"-12rem"}}>
+    <div style={{ position: 'absolute', width: '100%', height: '80%' ,bottom:"-12rem"}}>
       <motion.header className="header-motion" initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={transition}>
         {/* <Logo width="40" height="40" /> */}
         <motion.div animate={{ x: snap.intro ? 0 : 100, opacity: snap.intro ? 1 : 0 }} transition={transition}>
