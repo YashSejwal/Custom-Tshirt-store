@@ -29,7 +29,7 @@ export function Overlay() {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ type: 'spring', damping: 5, stiffness: 40, restDelta: 0.001, duration: 0.3 }}>
-                <h1>LET'S DO IT.</h1>
+                <h1 style={{marginTop:'-25rem'}}>LET'S DO IT.</h1>
               </motion.div>
               <div className="support--content">
                 <motion.div
@@ -78,9 +78,9 @@ function Customizer() {
       <div className="decals">
         <div className="decals--container">
           {snap.decals.map((decal) => (
-            <div key={decal} className={`decal`} onClick={() => (state.decal = decal)}><marquee behavior="scrolling" direction="down" height="200px">
+            <div key={decal} className={`decal`} onClick={() => (state.decal = decal)}>
               <img src={decal + '_thumb.png'} alt="brand" style={{width:'45px' ,gap:'12px'}} />
-            </marquee  >
+            
               
             </div>
           ))}
