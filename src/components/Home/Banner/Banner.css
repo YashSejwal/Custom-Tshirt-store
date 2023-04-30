@@ -1,0 +1,5 @@
+#bannerButton:hover{
+    background-color: rgb(128, 1, 255);
+    color: aliceblue;
+    transform: scale(1.1);
+}
