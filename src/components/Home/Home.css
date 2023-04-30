@@ -2,8 +2,27 @@
     width: 1230px;
     height: fit-content;
 }
-
+#bannerAdMain{
+    width: 1000px;
+    height: 570px;
+    margin-left: 110px;
+}
 .row{
     display: flex;
     flex-direction: column;
+}
+
+.rowOne, .rowTwo{
+    flex-direction: row-reverse;
+    margin-left: 60px;
+    margin-bottom: 70px;
+}
+
+#productCard:hover{
+    transform: scale(1.12);
+}
+
+.productTitle{
+    margin-bottom: 40px;
+    text-align: center;
 }

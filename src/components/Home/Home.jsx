@@ -15,6 +15,8 @@ import BannerImgFW from "../../assets/5.png";
 import BannerImgSW from "../../assets/6.png";
 import BannerImgTW from "../../assets/7.png";
 import BannerImgFoW from "../../assets/8.png";
+import BannerImgAd from "../../assets/mainAd.png";
+
 const Home = () => {
     const { products, setProducts, categories, setCategories } =
         useContext(Context);
@@ -66,55 +68,87 @@ const Home = () => {
                 <div className="layout">
                     <Category categories={categories} />
                     <img src={BannerImg} id="bannerAd"/>    
+                    <img src={BannerImgAd} id="bannerAdMain" /> 
+                    <div className="row rowOne">
+                    <div className="col-md-3">
+                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgF} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px"}}/>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgS} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px" }}/>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgT} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px" }}/>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="card" id="productCard"  style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgFo} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px",margin:"0%" }}/>
+                        </div>
+                    </div>
+                </div>
+                    <center>
                     <Products
                         headingText="Popular Products and Offers"
                         products={products}
+                        style={{textAlign:"center"}}
                     />
-                                 
+                        </center>         
                 </div>
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-1">
-                        <div className="card" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgF} alt="Card image cap" style={{height: "60%", width: "60%", }}/>
-                        </div>
-                    </div>
-                    <div className="col-md-1">
-                        <div className="card" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgS} alt="Card image cap" style={{height: "60%", width: "60%",  }}/>
-                        </div>
-                    </div>
-                    <div className="col-md-1">
-                        <div className="card" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgT} alt="Card image cap" style={{height: "60%", width: "60%",  }}/>
-                        </div>
-                    </div>
-                    <div className="col-md-1">
-                        <div className="card" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgFo} alt="Card image cap" style={{height: "60%", width: "60%",  }}/>
-                        </div>
-                    </div>
-                </div>
+               
 
-                <div className="row">
-                    <div className="col-md-1">
-                        <div className="card" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgFW} alt="Card image cap" style={{height: "60%", width: "60%", }}/>
+{/* MEN & WOMEN SECTION */}
+
+            <div className="container-fluid">
+                    <h1 className="productTitle" style={{textAlign:"center"}}>MEN</h1>
+                        &nbsp;
+                <div className="row rowOne">
+                    <div className="col-md-3">
+                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgF} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px"}}/>
                         </div>
                     </div>
-                    <div className="col-md-1">
-                        <div className="card" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgSW} alt="Card image cap" style={{height: "60%", width: "60%",  }}/>
+                    <div className="col-md-3">
+                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgS} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px" }}/>
                         </div>
                     </div>
-                    <div className="col-md-1">
-                        <div className="card" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgTW} alt="Card image cap" style={{height: "60%", width: "60%",  }}/>
+                    <div className="col-md-3">
+                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgT} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px" }}/>
                         </div>
                     </div>
-                    <div className="col-md-1">
-                        <div className="card" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgFoW} alt="Card image cap" style={{height: "60%", width: "60%",  }}/>
+                    <div className="col-md-3">
+                        <div className="card" id="productCard"  style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgFo} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px",margin:"0%" }}/>
+                        </div>
+                    </div>
+                </div>
+                  <h1 className="productTitle" style={{textAlign:"center"}}>WOMEN</h1>
+                  &nbsp;
+                <div className="row rowTwo">
+                    <div className="col-md-3">
+                        <div className="card" id="productCard" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgFW} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px"}}/>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="card" id="productCard"  style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgSW} alt="Card image cap" style={{height: "100%", width: "90%",padding:"4px"  }}/>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="card" id="productCard"  style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgTW} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px" }}/>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerImgFoW} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px" }}/>
                         </div>
                     </div>
                 </div>
