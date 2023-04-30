@@ -42,6 +42,7 @@ const SingleProduct = () => {
                                 process.env.REACT_APP_STRIPE_APP_DEV_URL +
                                 product.image.data[0].attributes.url
                             }
+                            alt="Coming Soon"
                         />
                     </div>
                     <div className="right">

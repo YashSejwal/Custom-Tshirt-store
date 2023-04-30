@@ -53,7 +53,7 @@ const Footer = () => {
                     <span className="text">
                         TEAM BYTE BUILDERS | 	&copy; COPYRIGHT 2023 
                     </span>
-                    <img src={Payment} />
+                    <img src={Payment} alt="Coming Soon" />
                 </div>
             </div>
         </div>

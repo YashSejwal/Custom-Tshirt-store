@@ -15,6 +15,7 @@ const Product = ({ data, id }) => {
                         process.env.REACT_APP_STRIPE_APP_DEV_URL +
                         data.image.data[0].attributes.url
                     }
+                    alt="Coming Soon"
                 />
             </div>
             <div className="prod-details">

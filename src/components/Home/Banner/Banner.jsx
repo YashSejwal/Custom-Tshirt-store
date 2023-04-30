@@ -18,7 +18,8 @@ const Banner = () => {
                         <div className="banner-cta v2" id="bannerButton">Shop Now</div>
                     </div>
                 </div>
-                <img className="banner-img" src={BannerImg}  style={{translate:" 12% -2%", height:"480px",width:"750px"}}/>
+                <img className="banner-img" src={BannerImg}  style={{translate:" 12% -2%", height:"480px",width:"750px"}}
+                alt="Coming Soon"/>
             </div>
         </div>
     );

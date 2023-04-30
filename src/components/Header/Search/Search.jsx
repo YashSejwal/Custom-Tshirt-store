@@ -59,6 +59,7 @@ const Search = ({ setSearchModal }) => {
                                         item.attributes.image.data[0].attributes
                                             .url
                                     }
+                                    alt="Coming Soon"
                                 />
                             </div>
                             <div className="prod-details">

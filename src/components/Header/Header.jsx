@@ -7,7 +7,7 @@ import "./Header.scss";
 import Search from "./Search/Search";
 import { Context } from "../../utils/context";
 import Cart from "../Cart/Cart";
-import Category from "../Home/Category/Category";
+// import Category from "../Home/Category/Category";
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [searchModal, setSearchModal] = useState(false);
@@ -37,6 +37,7 @@ const Header = () => {
                         <li onClick={() => navigate("/")}>Home</li>
                         <li onClick={() => navigate("/about")}>About</li>
                         <li onClick={() => navigate("/category")}>Categories</li>
+                        <li onClick={() => navigate("/shirtcustomize")}>Customize</li>
                     </ul>
                     <div className="center" onClick={() => navigate("/")}>
                         NETFIT

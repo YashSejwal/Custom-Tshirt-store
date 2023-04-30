@@ -21,6 +21,7 @@ const CartItem = () => {
                                 process.env.REACT_APP_STRIPE_APP_DEV_URL +
                                 item.attributes.image.data[0].attributes.url
                             }
+                            alt="Coming Soon"
                         />
                     </div>
                     <div className="prod-details">
