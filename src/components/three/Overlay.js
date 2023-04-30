@@ -72,14 +72,16 @@ function Customizer() {
     <div className="customizer">
       <div className="color-options">
         {snap.colors.map((color) => (
-          <div key={color} className={`circle`} style={{ background: color }} onClick={() => (state.color = color)}></div>
+          <div key={color} className={`circle`} style={{ background: color  }} onClick={() => (state.color = color)}></div>
         ))}
       </div>
       <div className="decals">
         <div className="decals--container">
           {snap.decals.map((decal) => (
-            <div key={decal} className={`decal`} onClick={() => (state.decal = decal)}>
-              <img src={decal + '_thumb.png'} alt="brand" />
+            <div key={decal} className={`decal`} onClick={() => (state.decal = decal)}><marquee behavior="scrolling" direction="down" height="200px">
+              <img src={decal + '_thumb.png'} alt="brand" style={{width:'45px' ,gap:'12px'}} />
+            </marquee  >
+              
             </div>
           ))}
         </div>

@@ -2,3 +2,8 @@
     width: 1230px;
     height: fit-content;
 }
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
