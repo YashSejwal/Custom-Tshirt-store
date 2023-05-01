@@ -14,7 +14,8 @@ import { easing } from "maath";
 import { useSnapshot } from "valtio";
 import { state } from "./store";
 
-export const CanvasBase = ({ position = [0, 0, 2.5], fov = 25 }) => (
+//Tshirt Positioning
+export const CanvasBase = ({ position = [0, -0.08, 2.7], fov = 25 }) => ( 
   <Canvas
     shadows
     camera={{ position, fov }}
@@ -22,11 +23,11 @@ export const CanvasBase = ({ position = [0, 0, 2.5], fov = 25 }) => (
     eventSource={document.getElementById("root")}
     eventPrefix="client"
   >
-    <ambientLight intensity={0.5} />
+    <ambientLight intensity={0.8} />
     <Environment preset="city" />
     <CameraRig>
       <Backdrop />
-      <Center>
+      <Center >
         <Shirt />
       </Center>
     </CameraRig>
@@ -50,9 +51,9 @@ function Backdrop() {
       temporal
       frames={60}
       alphaTest={0.85}
-      scale={10}
+      scale={100}
       rotation={[Math.PI / 2, 0, 0]}
-      position={[0, 0, -0.14]}
+      position={[0, 0.25, -0.14]}
     >
       <RandomizedLight
         amount={4}
@@ -62,8 +63,8 @@ function Backdrop() {
         position={[5, 5, -10]}
       />
       <RandomizedLight
-        amount={4}
-        radius={5}
+        amount={6}
+        radius={50}
         intensity={0.25}
         ambient={0.55}
         position={[-5, 5, -9]}
@@ -109,16 +110,15 @@ function Shirt(props) {
       dispose={null}
     >
       <Decal
-        // position={[0, -0.04, 0.15]}
-        position={[0, -0.04, 0.15]}
+        position={[0, -0.04, 0.15]}          // image position
         rotation={[0, 0, 0]}
-        scale={0.47}
+        scale={0.31}                         // image size
         map={texture}
-        map-anisotropy={200}
+        map-anisotropy={100}
       />
     </mesh>
   );
 }
 
 useGLTF.preload("/shirt_baked_collapsed.glb");
-["/react.png", "/three2.png", "/pmndrs.png"].forEach(useTexture.preload);
+["/aakruthi.png", "/three2.png", "/pmndrs.png"].forEach(useTexture.preload);

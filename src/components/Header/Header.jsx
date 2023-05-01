@@ -59,6 +59,7 @@ const Header = () => {
             </header>
             {searchModal && <Search setSearchModal={setSearchModal} />}
             {showCart && <Cart />}
+         
         </>
     );
 };
