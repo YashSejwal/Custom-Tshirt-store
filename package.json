@@ -23,6 +23,7 @@
     "formik": "^2.2.9",
     "framer-motion": "^10.12.4",
     "maath": "^0.5.3",
+    "mdb-react-ui-kit": "^6.0.0",
     "pure-react-carousel": "^1.29.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
