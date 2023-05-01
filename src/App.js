@@ -10,7 +10,7 @@ import Newsletter from "./components/Footer/Newsletter/Newsletter";
 import AppContext from "./utils/context";
 // import Product from "./components/Products/Product/Product";
 import ShirtCustomize from "./components/three/ShirtCustomize";
-
+import Checkout from "./components/Checkout/Checkout";
 function App() {
     return (
         <BrowserRouter>
@@ -21,6 +21,7 @@ function App() {
                     <Route path="/category/:id" element={<Category />} />
                     <Route path="/product/:id" element={<SingleProduct />} />
                     <Route path="/shirtcustomize" element={<ShirtCustomize/>}/>
+                    <Route path="/checkout" element={<Checkout/>}/>
                 </Routes>
                 <Newsletter />
                 <Footer />

@@ -46,7 +46,10 @@
     justify-content: center;
     background-image: url(../../assets/abtBg.png);
   }
-  
+  .about-image{
+    display: flex;
+    justify-content: center;
+  }
   #about-image img {
     width: 100%;
     height: auto;
@@ -68,15 +71,44 @@
   @media (max-width: 768px) {
     .about-section {
       flex-direction: column;
+      text-align: center;
+      justify-content: center;
     }
     
     #about-image {
+      width: 400px !important;
+      height: 300px;
       order: 2;
     }
     
     .about-text {
+
+      display: flex;
+      flex-direction: column;
       order: 1;
       text-align: center;
+      position: relative;
+      justify-content: center;
+      left:-20px;
     }
+    .abtTitle{
+      font-size: 50px;
+    }
+    .productTitle{
+      margin-top: 20px;
+    }
+    .rowOne,.rowTwo{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      position: relative;
+      left:-20px;
+    }
+    .rowOne.col-md-3{
+      height: 300px;
+    }
+
   }
  
