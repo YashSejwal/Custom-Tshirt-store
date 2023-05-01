@@ -367,3 +367,12 @@ canvas {
 #productAd:hover{
   transform: scale(0.8);
 }
+
+
+.sizeButton{
+  width: 30px;
+  height: 100px;
+  transform:translateX(1000px) ;
+  background-color: black;
+  color:white;
+}
