@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { MdClose } from "react-icons/md";
-import { BsCartX } from "react-icons/bs";
+// import { BsCartX } from "react-icons/bs";
 import { Context } from "../../utils/context";
 import CartItem from "./CartItem/CartItem";
 import { loadStripe } from "@stripe/stripe-js";
@@ -10,6 +10,7 @@ import "./Cart.scss";
 import BannerImg from "../../assets/cart.png";
 import BannerImg2 from "../../assets/cartIcon.png";
 import BannerImg3 from "../../assets/storeIcon.png";
+import {Link} from 'react-router-dom';
 const Cart = () => {
     const { cartItems, setShowCart, cartSubTotal } = useContext(Context);
 
@@ -59,11 +60,14 @@ const Cart = () => {
                         <span>TOTAL AMOUNT  : Rs. 1499</span>
                         <div className="cartButtons" style={{flexDirection:"column"}}>
                         <button className="return-cta" id="shopButton" onClick={() => {}}>
-                            RETURN TO SHOP <img src={BannerImg3} style={{height:"30px", width:"30px", marginLeft:"5px"}} />
+                            RETURN TO SHOP <img src={BannerImg3} style={{height:"30px", width:"30px", marginLeft:"5px"}}  alt=""/>
                         </button> &nbsp;
-                        <button className="return-cta" id="shopButton" onClick={() => {}}>
-                            BUY NOW <img src={BannerImg2} style={{height:"25px", width:"25px", marginLeft:"10px"}} /> 
-                        </button>
+                        <Link to="/checkout">
+                            <button className="return-cta" id="shopButton" onClick={() => {}}>
+                            
+                            BUY NOW <img src={BannerImg2} style={{height:"25px", width:"25px", marginLeft:"10px"}} alt="" /> 
+                            </button>
+                        </Link>
                         </div>
                     </div>
                 )}
