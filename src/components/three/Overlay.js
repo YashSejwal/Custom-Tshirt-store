@@ -1,4 +1,3 @@
-// import { Logo } from '@pmndrs/branding'
 import { motion, AnimatePresence } from 'framer-motion'
 import { AiFillCamera, AiOutlineArrowLeft, AiOutlineHighlight} from 'react-icons/ai'
 import { useSnapshot } from 'valtio'
@@ -86,6 +85,7 @@ function Customizer() {
           ))}
         </div>
       </div>
+      <button className='sizeButton'>XS<br/>S<br/> M<br/>L <br/>XL<br/>XXL</button>
       <button
         className="share"
         style={{ background: snap.color }}
