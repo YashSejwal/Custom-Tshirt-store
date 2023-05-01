@@ -102,6 +102,7 @@ function Customizer() {
         GO BACK
         <AiOutlineArrowLeft size="1.8em" />
       </button>
+     
     </div>
   )
 }
