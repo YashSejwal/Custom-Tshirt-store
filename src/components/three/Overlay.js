@@ -32,7 +32,7 @@ export function Overlay() {
                 <h1 style={{marginTop:'-25rem'}}>LET'S DO IT.</h1>
               </motion.div>
               <div className="support--content">
-                <motion.div
+              <motion.div
                   key="p"
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -96,11 +96,11 @@ function Customizer() {
           link.click()
         }}>
         DOWNLOAD
-        <AiFillCamera size="1.3em" />
+        <AiFillCamera size="1.8em" />
       </button>
       <button className="exit" style={{ background: snap.color }} onClick={() => (state.intro = true)}>
         GO BACK
-        <AiOutlineArrowLeft size="1.3em" />
+        <AiOutlineArrowLeft size="1.8em" />
       </button>
     </div>
   )
