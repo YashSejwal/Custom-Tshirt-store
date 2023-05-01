@@ -2,11 +2,9 @@ import React, { useEffect, useContext } from "react";
 import "./Home.scss";
 import "./Home.css";
 import Banner from "./Banner/Banner";
-import Category from "./Category/Category";
 import Products from "../Products/Products";
 import { fetchDataFromApi } from "../../utils/api";
 import { Context } from "../../utils/context";
-import BannerImg from "../../assets/banner-ad.png";
 import BannerImgF from "../../assets/1.png";
 import BannerImgS from "../../assets/2.png";
 import BannerImgT from "../../assets/3.png";
@@ -24,7 +22,7 @@ import AboutImg from "../../assets/aboutImg.png";
 import WishlistImg from "../../assets/wishlist.png";
 
 const Home = () => {
-    const { products, setProducts, categories, setCategories } =
+    const { products, setProducts,setCategories } =
         useContext(Context);
     useEffect(() => {
         getProducts();
@@ -163,7 +161,7 @@ const Home = () => {
                         
                     />
 
-                    <img src={WishlistImg} style={{width: "60%", height: "100%"}}></img>
+                    <img src={WishlistImg} alt="wishlist" style={{width: "60%", height: "100%"}}></img>
             </center>        
             </div>
         </div>

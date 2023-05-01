@@ -31,7 +31,6 @@ const Cart = () => {
             console.log(err);
         }
     };
-    const { cartCount} = useContext(Context);
 
     return (
         <div className="cart-panel">
