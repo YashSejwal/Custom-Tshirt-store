@@ -41,7 +41,7 @@ const Header = () => {
                         <li onClick={() => navigate("/shirtcustomize")}>Customize</li>
                         <li id="catTitle"> <a href="#footerContact" >Contact Us</a></li>
                     </ul>
-                    <div className="btn-group">
+                    {/* <div className="btn-group">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Action</button>
                         <ul className=" dropdown-menu" style={{overflow:"visible"}}>
                         <li class="dropdown-item" onClick={() => navigate("/")}>Home</li>
@@ -50,7 +50,7 @@ const Header = () => {
                             <li class="dropdown-item" onClick={() => navigate("/shirtcustomize")}>Customize</li>
                             <li class="dropdown-item" id="catTitle"> <a href="#footerContact" >Contact Us</a></li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="center" onClick={() => navigate("/")}>
                         NETFIT
                     </div>
