@@ -10,7 +10,6 @@ import Newsletter from "./components/Footer/Newsletter/Newsletter";
 import AppContext from "./utils/context";
 // import Product from "./components/Products/Product/Product";
 import ShirtCustomize from "./components/three/ShirtCustomize";
-import CheckoutForm from "./components/Checkout/CheckoutForm";
 
 function App() {
     return (
@@ -22,7 +21,6 @@ function App() {
                     <Route path="/category/:id" element={<Category />} />
                     <Route path="/product/:id" element={<SingleProduct />} />
                     <Route path="/shirtcustomize" element={<ShirtCustomize/>}/>
-                    <Route path="/checkout" element={<CheckoutForm/>}/>
                 </Routes>
                 <Newsletter />
                 <Footer />
