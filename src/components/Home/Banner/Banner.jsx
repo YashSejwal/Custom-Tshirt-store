@@ -19,7 +19,7 @@ const Banner = () => {
 
                     </div>
                 </div>
-                <img className="banner-img" src={BannerImg}  style={{translate:" 12% -2%", height:"480px",width:"750px"}}
+                <img className="banner-img" src={BannerImg} 
                 alt="Coming Soon"/>
             </div>
         </div>

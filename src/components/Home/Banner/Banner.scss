@@ -20,9 +20,10 @@
             max-width: 1200px;
         }
         .banner-img {
+            translate:12% -2%; height:480px;width:750px;
             position: relative;
             z-index: 9;
-            width: 200px;
+            // width: 200px;
             margin-bottom: 20px;
             @include md {
                 width: 500px;

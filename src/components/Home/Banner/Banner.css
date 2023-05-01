@@ -16,3 +16,9 @@
 .banner-cta:hover{
     color:wheat;
 }
+
+@media screen and (max-width:768px) {
+    .banner-img {
+        translate: -2% 0% !important;
+    }
+}

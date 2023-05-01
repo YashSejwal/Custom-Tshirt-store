@@ -15,7 +15,7 @@ export default function CheckoutForm() {
     <MDBContainer fluid className="p-5" style={{ backgroundColor: "#eee" }}>
       <MDBCard>
         <MDBCardBody>
-          <MDBRow className="d-flex justify-content-center pb-5">
+          <MDBRow className="d-flex flex-row justify-content-center pb-5 ml-4">
             <MDBCol md="7" xl="5" className="mb-4 mb-md-0">
               <div className="py-4 d-flex flex-row">
                 <h5>
@@ -127,7 +127,7 @@ export default function CheckoutForm() {
               {" "}
               <div className="py-4 d-flex justify-content-end">
                 <h6>
-                  <a href="#!">Cancel and return to website</a>
+                  <a href="/">Cancel and return to website</a>
                 </h6>
               </div>
               <div
