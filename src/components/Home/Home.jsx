@@ -138,7 +138,8 @@ const Home = () => {
                 src={MainAd}
                 id="categoryAd"
                 alt="category ad"
-                style={{ width: "1080px" }}
+                style={{maxWidth:"100%", display:"block", margin:"0"}}
+
               />
             </div>
           </center>
