@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap');
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
 html {
   font-family: 'Inter', sans-serif;
 }
@@ -221,13 +222,17 @@ canvas {
 
 .decals {
   position: absolute;
-  top: -4.375rem;
+  top: 8.125rem;
   left: 20px;
   margin-left: 6.25rem;
   display: flex;
   flex-direction: column;
   width: 18.125;
-
+  background-color: #ecdeab;
+  padding: 15px;
+  box-shadow: 5px 5px 50px gray ;
+  flex-wrap: wrap;
+  max-height: 1.2rem;
 }
 
 .decals p {
@@ -327,4 +332,13 @@ canvas {
     top: -10%;
     left: 0;
   }
+}
+
+#productAd{
+  padding: 4px;
+  margin-right: 100px;
+}
+
+#productAd:hover{
+  transform: scale(0.8);
 }

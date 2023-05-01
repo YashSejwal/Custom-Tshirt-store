@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
 #bannerAd{
     width: 1230px;
     height: fit-content;
@@ -26,3 +27,52 @@
     margin-bottom: 40px;
     text-align: center;
 }
+
+.abtTitle{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 400px;
+    font-weight: 600;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/abtBg.png);
+  }
+  
+  #about-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 28px;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+    }
+    
+    #about-image {
+      order: 2;
+    }
+    
+    .about-text {
+      order: 1;
+      text-align: center;
+    }
+  }
+    

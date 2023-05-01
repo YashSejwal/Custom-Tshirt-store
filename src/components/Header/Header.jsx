@@ -4,6 +4,7 @@ import { TbSearch } from "react-icons/tb";
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineHeart } from "react-icons/ai";
 import "./Header.scss";
+import "./Header.css";
 import Search from "./Search/Search";
 import { Context } from "../../utils/context";
 import Cart from "../Cart/Cart";
@@ -35,9 +36,10 @@ const Header = () => {
                 <div className="header-content">
                     <ul className="left">
                         <li onClick={() => navigate("/")}>Home</li>
-                        <li onClick={() => navigate("/about")}>About</li>
-                        <li onClick={() => navigate("/category")}>Categories</li>
+                        <li id="catTitle"> <a href="#aboutUs" >About</a></li>
+                        <li id="catTitle"> <a href="#categoryAd" >Categories</a></li>
                         <li onClick={() => navigate("/shirtcustomize")}>Customize</li>
+                        <li id="catTitle"> <a href="#footerContact" >Contact Us</a></li>
                     </ul>
                     <div className="center" onClick={() => navigate("/")}>
                         NETFIT

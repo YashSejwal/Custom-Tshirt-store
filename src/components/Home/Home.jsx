@@ -15,7 +15,12 @@ import BannerImgFW from "../../assets/5.png";
 import BannerImgSW from "../../assets/6.png";
 import BannerImgTW from "../../assets/7.png";
 import BannerImgFoW from "../../assets/8.png";
-import BannerImgAd from "../../assets/mainAd.png";
+import BannerAd1 from "../../assets/ad1.png";
+import BannerAd2 from "../../assets/ad2.png";
+import BannerAd3 from "../../assets/ad3.png";
+import BannerAd4 from "../../assets/ad4.png";
+import MainAd from "../../assets/categoryAd.png";
+import AboutImg from "../../assets/aboutImg.png";
 
 const Home = () => {
     const { products, setProducts, categories, setCategories } =
@@ -68,36 +73,53 @@ const Home = () => {
                 <div className="layout">
                     <Category categories={categories} />
                     <img src={BannerImg} id="bannerAd"/>    
-                    <img src={BannerImgAd} id="bannerAdMain" /> 
+                    <section class="about-section" id="aboutUs">
+                        <div class="about-image">
+                            <img src={AboutImg} style={{height:"400px", width:"100%", marginBottom:"80px",marginTop:"20px"}} alt="About Us" id="about-image"/>
+                        </div> 
+                        <div class="about-text">
+                            <h2 className="abtTitle">About Us</h2>
+                            &nbsp;
+                            <br/> <br />
+                            <p>Our company is an online store that allows customers to design and customize their own t-shirts according to their preferences. We provide a user-friendly platform where customers can choose from a variety of t-shirt styles, colors, and designs, and then add their own text or graphics to create a unique and personalized shirt. Our goal is to provide high-quality custom t-shirts at affordable prices while ensuring a hassle-free and enjoyable shopping experience for our customers.</p>
+                        </div>
+                    </section>
+
                     <div className="row rowOne">
                     <div className="col-md-3">
-                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgF} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px"}}/>
+                        <div className="card"  id="productAd" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerAd1} alt="Card image cap" style={{height: "89.2%", width: "100%", padding:"4px"}}/>
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgS} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px" }}/>
+                        <div className="card"  id="productAd" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerAd2} alt="Card image cap" style={{height: "90%", width: "100%", padding:"4px" }}/>
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div className="card"  id="productCard" style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgT} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px" }}/>
+                        <div className="card"  id="productAd" style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerAd3} alt="Card image cap" style={{height: "90%", width: "100%", padding:"4px" }}/>
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div className="card" id="productCard"  style={{width: "100%", height: "100%"}}>
-                            <img className="card-img-top" src={BannerImgFo} alt="Card image cap" style={{height: "100%", width: "90%", padding:"4px",margin:"0%" }}/>
+                        <div className="card" id="productAd"  style={{width: "100%", height: "100%"}}>
+                            <img className="card-img-top" src={BannerAd4} alt="Card image cap" style={{height: "90%", width: "100%", padding:"4px",margin:"0%" }}/>
                         </div>
                     </div>
                 </div>
+                <center>
+                <div className="mainAd">
+               
+                    <img src={MainAd} id="categoryAd" style={{width:"1080px"}} />
+                </div>
+                </center>  
                     <center>
                     <Products
                         headingText="Popular Products and Offers"
                         products={products}
                         style={{textAlign:"center"}}
                     />
-                        </center>         
+                    </center>         
                 </div>
                
 
@@ -153,7 +175,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-                
+            {/* <img src={BannerImgAd} style={{justifyContent:'center'}} id="bannerAdMain" />  */}
             </div>
         </div>
      

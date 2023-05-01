@@ -4,7 +4,7 @@ import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
 import Payment from "../../assets/payments.png";
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer" id="footerContact">
             <div className="footer-content">
                 <div className="col">
                     <div className="title">About</div>
