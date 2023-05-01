@@ -47,7 +47,7 @@ const Home = () => {
           {/* <Category categories={categories} /> */}
           <section className="about-section">
             <div className="about-image">
-              <img src={AboutImg} style={{}} alt="About Us" id="about-image" />
+              <img src={AboutImg}  alt="About Us" id="about-image" />
             </div>
             <div className="about-text">
               <h1 className="abtTitle">About&nbsp;Us</h1>

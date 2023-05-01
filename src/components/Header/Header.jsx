@@ -41,6 +41,7 @@ const Header = () => {
                         <li onClick={() => navigate("/shirtcustomize")}>Customize</li>
                         <li id="catTitle"> <a href="#footerContact" >Contact Us</a></li>
                     </ul>
+                  
                     <div className="center" onClick={() => navigate("/")}>
                         NETFIT
                     </div>
