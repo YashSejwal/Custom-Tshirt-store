@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import "./Footer.css";
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
 import Payment from "../../assets/payments.png";
 const Footer = () => {
@@ -31,12 +32,12 @@ const Footer = () => {
                 </div>
                 <div className="col">
                     <div className="title">Categories</div>
-                    <span className="text">Polo Tshirts</span>
-                    <span className="text">Regular Fit</span>
-                    <span className="text">Long Tshirts</span>
-                    <span className="text">Trending Tshirts</span>
-                    <span className="text">Oversized Tshirts</span>
-                    <span className="text">Lounge Tshirts</span>
+                    <span className="text" id="footerCat"><a href="#categoryAd">Polo Tshirts</a></span>
+                    <span className="text" id="footerCat"><a href="#categoryAd">Regular Fit</a></span>
+                    <span className="text" id="footerCat"><a href="#categoryAd">Long Tshirts</a></span>
+                    <span className="text" id="footerCat"><a href="#categoryAd">Trending Tshirts</a></span>
+                    <span className="text" id="footerCat"><a href="#categoryAd">Oversized Tshirts</a></span>
+                    <span className="text" id="footerCat"><a href="#categoryAd">Lounge Tshirts</a></span>
                 </div>
                 <div className="col">
                     <div className="title">Pages</div>

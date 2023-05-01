@@ -105,6 +105,7 @@ canvas {
   width: 21.875rem;
   margin-block: 3rem;
   line-height: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .bg {
@@ -131,7 +132,8 @@ canvas {
   display: flex;
   align-items: center;
   gap: 0.938rem;
-  padding: 0.938rem 1.875rem;
+  padding: 0.938rem 1.575rem;
+  margin-bottom: 20px;
 }
 
 .section--container .button:hover,.exit button:hover {
@@ -148,6 +150,7 @@ canvas {
   translate: 20px,40px;
   flex-direction: row;
   width: 100%;
+  
 }
 
 .customizer span {
@@ -193,22 +196,28 @@ canvas {
   left: 50%;
   top: 8.125rem;
   width: 7.5rem !important;
-  height: 7.5rem !important;
+  height: 5.5rem !important;
+  /* overflow-y:scroll; */
 }
 
 .color-options {
   display: flex;
   flex-direction: column;
-  margin-left: 3.12rem;
+  margin-left: 1.12rem;
   position: absolute;
   top: -14.375rem;
-  gap: 10px;
+  gap: 7px;
   margin-bottom: 20px;
+  box-shadow: 5px 5px 5px rgb(110, 110, 110);
+  /* width: 13px; */
+  padding: 5px 5px;
+  margin-right: 100px;
+ 
 }
 
 .circle {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
   border-radius: 50%;
   border: 2px solid white;
   transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
@@ -216,24 +225,35 @@ canvas {
 }
 
 .circle:hover {
-  transform: scale(1.2);
+  transform: translateX(35px) 0.6s ,scale(1.2);
+  
   cursor: pointer;
 }
 
 .decals {
   position: absolute;
-  top: 8.125rem;
-  left: 20px;
-  margin-left: 6.25rem;
+  margin-left: -24.25rem;
+  margin-top: 5px;
   display: flex;
-  flex-direction: column;
-  width: 18.125;
-  background-color: #ecdeab;
-  padding: 15px;
-  box-shadow: 5px 5px 50px gray ;
-  flex-wrap: wrap;
-  max-height: 1.2rem;
+  top: -14.375rem;
+  left: 30.925rem;
+  box-shadow: 5px 5px 50px rgb(110, 110, 110);
+  margin-bottom: 100px;
+  gap: 100px;
 }
+
+.decal {
+  margin-right: 4px;
+}
+
+.decal:last-child {
+  margin-right: 0;
+}
+
+.decal img {
+  width: 45px;
+}
+
 
 .decals p {
   font-family: 'Inter var';
@@ -243,16 +263,17 @@ canvas {
 
 .decals img {
   width: 24px;
-  filter: saturate(0) invert(1) brightness(5.5);
+ 
   transition: all 0.2s ease-in-out;
-  size: 6.25rem;
+  size: 16.25rem;
   
 }
 
 .decals img:hover {
-  filter: none;
-  transform: scale(1.2);
+   /* filter: saturate(0) invert(1) brightness(5.5); */
+  transform: scale(1.625);
   cursor: pointer;
+  gap: 10px;
 }
   
 
@@ -264,7 +285,7 @@ canvas {
   color: #00000056;
   font-size: 0.6rem;
   border: 1px solid #00000000;
-  translate: 31.25rem,40px;
+  /* translate: 31.25rem,40px; */
   padding: 10px 10px;
   border-radius: 3.125rem;
   font-weight: 600;
@@ -288,11 +309,12 @@ canvas {
 
 .decals--container {
   display: flex;
-  height: 100%;
-  width: 100%;
-  gap: 23px;
-  flex-direction: column;
-  translate: 36.875rem,40px;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items:flex-start;
+  width: 1120px;
+  translate: 100px,100px;
+  padding: 15px 5px ;
 }
 
 .exit {

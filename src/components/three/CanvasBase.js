@@ -44,6 +44,7 @@ function Backdrop() {
     )
   );
   return (
+    
     <AccumulativeShadows
       ref={shadows}
       temporal
@@ -108,11 +109,12 @@ function Shirt(props) {
       dispose={null}
     >
       <Decal
-        position={[0, 0.04, 0.15]}
+        // position={[0, -0.04, 0.15]}
+        position={[0, -0.04, 0.15]}
         rotation={[0, 0, 0]}
-        scale={0.15}
+        scale={0.47}
         map={texture}
-        map-anisotropy={16}
+        map-anisotropy={200}
       />
     </mesh>
   );
