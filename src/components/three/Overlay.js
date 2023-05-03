@@ -125,27 +125,28 @@ function Customizer() {
       </div>
       <div className="size-buttons">
         <span style={{color:"white",opacity:"0"}} >ooooooo</span>
-        <button className="sizeButton" onClick={() => (state.size = 'XS')}>
+        <h1 className='sizeTitle'> Select your size : </h1>
+        <button className="sizeButton" style={{ background: snap.color }} onClick={() => (state.size = 'XS')}>
           XS <br/>
         </button>
-        <button className="sizeButton" onClick={() => (state.size = 'S')}>
+        <button className="sizeButton"  style={{ background: snap.color }}onClick={() => (state.size = 'S')}>
           S
         </button>
-        <button className="sizeButton" onClick={() => (state.size = 'M')}>
+        <button className="sizeButton" style={{ background: snap.color }} onClick={() => (state.size = 'M')}>
           M
         </button>
-        <button className="sizeButton" onClick={() => (state.size = 'L')}>
+        <button className="sizeButton" style={{ background: snap.color }} onClick={() => (state.size = 'L')}>
           L
         </button>
-        <button className="sizeButton" onClick={() => (state.size = 'XL')}>
+        <button className="sizeButton"  style={{ background: snap.color }} onClick={() => (state.size = 'XL')}>
           XL
         </button>
-        <button className="sizeButton" onClick={() => (state.size = 'XXL')}>
+        <button className="sizeButton"  style={{ background: snap.color }} onClick={() => (state.size = 'XXL')}>
           XXL
         </button>
       </div>
       <button
-        className="share"
+        className="share downloadButton"
         style={{ background: snap.color }}
         onClick={() => {
           const link = document.createElement('a')
@@ -155,11 +156,14 @@ function Customizer() {
         }}
       >
         DOWNLOAD
-        <AiFillCamera size="1.8em" />
+        <AiFillCamera size="5.8rem" />
       </button>
-      <button className="exit" style={{ background: snap.color }} onClick={() => (state.intro = true)}>
+      <button className="exit backButton" style={{ background: snap.color }} onClick={() => (state.intro = true)}>
         GO BACK
         <AiOutlineArrowLeft size="1.8em" />
+      </button>
+      <button className="exit cartButton" style={{ background: snap.color }} onClick={() => (state.intro = true)}>
+        ADD TO CART
       </button>
     </div>
   )

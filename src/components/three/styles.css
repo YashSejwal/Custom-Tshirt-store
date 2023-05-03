@@ -119,9 +119,10 @@ canvas {
 }
 
 .button,.share,.exit {
-  background-color: #dd5c18;
+  background-color: none;
+  border-color: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   color: white;
   font-weight: bolder;
   pointer-events: all;
@@ -132,9 +133,9 @@ canvas {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  gap: 0.938rem;
-  padding: 0.938rem 1.575rem;
-  margin-bottom: 20px;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  margin: 20px 20px;
 }
 
 .section--container .button:hover,.exit button:hover {
@@ -226,8 +227,8 @@ canvas {
 }
 
 .circle:hover {
-  transform: translateX(50px) scale(1.2);
-  transition: transform 1.2s ease-in-out;
+  transform: scale(1.4);
+  transition: transform 0.3s ease-in-out;
 
   
   cursor: pointer;
@@ -372,14 +373,56 @@ canvas {
 
 
 .sizeButton{
-  width: 40px;
-  font-size: 19px;
-  height: 40px;
-  transform:translateX(40px) translateY(215px) ;
+  width: 50px;
+  font-size: 18px;
+  height: 45px;
+  transform:translateX(80px) translateY(155px) ;
   background-color: rgb(83, 0, 131);
   color:white;
+  font-family: 'Orbitron', sans-serif;
+  border-color: rgb(255, 255, 255);
 }
 
 .sizeButton:hover{
-  transform: scale(0.9);
+    border-color: black;
+    box-shadow: 0 4px 16px rgb(157, 0, 181);
+  }
+
+.sizeTitle{
+  transform:translateX(80px) translateY(150px);
+}
+
+.cartButton{
+  transform:translateX(00px) translateY(60px);
+  padding: 15px 10px !important;
+  text-align: center !important;
+  font-size:large;
+  justify-content: center !important;
+  height: 60px;
+  width: 160px;
+}
+
+.cartButton:hover{
+  
+}
+
+.backButton{
+  padding: 8.5px 13px !important;
+  text-align: center !important;
+  font-size:large;
+  justify-content: center !important;
+  height: 60px;
+  width: 160px;
+  margin-bottom: 13px;
+  transform:translateX(00px) translateY(130px);
+}
+
+.downloadButton{
+  padding: 8.5px 13px !important;
+  text-align: center !important;
+  font-size:large;
+  justify-content: center !important;
+  height: 60px;
+  width: 160px;
+  transform:translateX(00px) translateY(-70px);
 }
