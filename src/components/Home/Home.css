@@ -39,19 +39,25 @@
 }
 
 .about-section {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 0;
+    padding: 0%;
+    margin-right: 0;
     justify-content: center;
-    background-image: url(../../assets/abtBg.png);
+    background-image: url(../../assets/aboutUs.svg);
   }
   .about-image{
     display: flex;
     justify-content: center;
+        opacity: 0;
+
   }
   #about-image img {
     width: 100%;
+    opacity: 0;
     height: auto;
   }
   
@@ -73,6 +79,9 @@
       flex-direction: column;
       text-align: center;
       justify-content: center;
+      background-image:url(../../assets/aboutUsSmall.png);
+      background-repeat: no-repeat;
+      margin-left: -12px;
     }
     
     #about-image {

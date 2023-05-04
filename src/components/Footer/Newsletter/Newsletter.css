@@ -8,3 +8,9 @@
     border-bottom: rgb(197, 42, 235);
     transform: scale(0.9);
 }
+
+@media (max-width: 768px) {
+    .newsletter-section{
+    background:url("../../../assets/newsBgSmall.jpg");
+}
+}

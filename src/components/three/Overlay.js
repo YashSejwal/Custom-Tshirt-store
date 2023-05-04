@@ -65,46 +65,7 @@ export function Overlay() {
   )
 }
 
-// function Customizer() {
-//   const snap = useSnapshot(state)
-//   return (
-//     <div className="customizer">
-//       <div className="color-options">
-//         {snap.colors.map((color) => (
-//           <div key={color} className={`circle`} style={{ background: color  }} onClick={() => (state.color = color)}></div>
-//         ))}
-//       </div>
-//       <div className="decals">
-//         <div className="decals--container">
-//           {snap.decals.map((decal) => (
-//             <div key={decal} className={`decal`} onClick={() => (state.decal = decal)}>
-//               <img src={decal + '_thumb.png'} alt="brand" style={{width:'75px' ,gap:'4px'}} />
-            
-              
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//       <button
-//         className="share"
-//         style={{ background: snap.color }}
-//         onClick={() => {
-//           const link = document.createElement('a')
-//           link.setAttribute('download', 'canvas.png')
-//           link.setAttribute('href', document.querySelector('canvas').toDataURL('image/png').replace('image/png', 'image/octet-stream'))
-//           link.click()
-//         }}>
-//         DOWNLOAD
-//         <AiFillCamera size="1.8em" />
-//       </button>
-//       <button className="exit" style={{ background: snap.color }} onClick={() => (state.intro = true)}>
-//         GO BACK
-//         <AiOutlineArrowLeft size="1.8em" />
-//       </button>
-     
-//     </div>
-//   )
-// }
+
 function Customizer() {
   const snap = useSnapshot(state)
   return (

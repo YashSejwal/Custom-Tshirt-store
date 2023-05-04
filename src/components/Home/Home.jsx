@@ -44,28 +44,12 @@ const Home = () => {
       <Banner />
       <div className="main-content" style={{ marginTop: "110px" }}>
         <div className="layout" id="aboutUs">
-          {/* <Category categories={categories} /> */}
-          <section className="about-section">
+          <section className="about-section" style={{marginTop: "20px"}}>
             <div className="about-image">
               <img src={AboutImg}  alt="About Us" id="about-image" />
             </div>
-            <div className="about-text">
-              <h1 className="abtTitle">About&nbsp;Us</h1>
-              &nbsp;
-              <br /> <br />
-              <p>
-                Our company is an online store that allows customers to design
-                and customize their own t-shirts according to their preferences.
-                We provide a user-friendly platform where customers can choose
-                from a variety of t-shirt styles, colors, and designs, and then
-                add their own text or graphics to create a unique and
-                personalized shirt. Our goal is to provide high-quality custom
-                t-shirts at affordable prices while ensuring a hassle-free and
-                enjoyable shopping experience for our customers.
-              </p>
-            </div>
           </section>
-          <h1 className="productTitle" style={{ textAlign: "center" }}>
+          <h1 className="productTitle" style={{ textAlign: "center", marginTop:"34px" }}>
             NEW ARRIVALS
           </h1>
           &nbsp;
