@@ -24,7 +24,7 @@ export const CanvasBase = ({ position = [0, -0.08, 2.7], fov = 25 }) => (
     eventPrefix="client"
   >
     <ambientLight intensity={0.8} />
-    <Environment preset="city" />
+    {/* <Environment preset="city" /> */}
     <CameraRig>
       <Backdrop />
       <Center >
@@ -114,7 +114,7 @@ function Shirt(props) {
         rotation={[0, 0, 0]}
         scale={0.31}                         // image size
         map={texture}
-        map-anisotropy={100}
+        // map-anisotropy={100}
       />
     </mesh>
   );
